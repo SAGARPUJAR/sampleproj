@@ -6,11 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./users.component.css'],
 })
 export class UsersComponent {
-  userName: string = '';
   userList: string[] = [];
 
-  onUserAdded() {
-    this.userList.push(this.userName);
-    this.userName = '';
+  onUserAdded(event: string) {
+    this.userList.push(event);
   }
 }
