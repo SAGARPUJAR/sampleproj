@@ -6,4 +6,22 @@
 
 <hr />
 
+<h2>Accessing HTML Element using Local Reference</h2>
 <app-local-reference></app-local-reference>
+
+<hr />
+<h2>Accessing HTML Element using @Viewchild and ElementRef</h2>
+<app-view-child></app-view-child>
+
+<hr />
+<h2>Content Projection</h2>
+<app-contentprojection27 *ngFor="let user of userList" [users]="user">
+  <p #userName>name is {{ user }}</p>
+</app-contentprojection27>
+
+
+<hr/>
+<h3>Custome Directives</h3>
+<p app-hightlight>Hello</p>
+
+<p appRendereHighlight>Hello SAGAR</p>
